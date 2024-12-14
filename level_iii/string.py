@@ -121,12 +121,49 @@ if "BC" in my_string:
 else:
     print("BC was not found!")
 
+print("\n--------15--------\n")
 
+# check if searchstring is in checkstring
+def checkinstring (checkstring,searchstring):
+    if searchstring in checkstring:
+        print(searchstring + "was found!")
+    else:
+        print(searchstring + "was not found!")
 
+my_string = "ABCDE"
+checkinstring(my_string ,  "BC")
+checkinstring(my_string ,  "GH")
 
+def checknotinstring( checkstring,searchstring):
+    if searchstring not in checkstring:
+        print(searchstring + "was not found")
+    else:
+        print(searchstring + "was found")
+my_string = "ABCDE"
+checknotinstring(my_string, "BC")
+checknotinstring(my_string, "GH" )
 
+print("\n--------15--------\n")
 
+# The find method -1
+my_string = "ABCDE"
+print(my_string.find("CDE"))
+print(my_string.find("EDC"))
 
+# The find method -2
+def checkinmystring (checkstring,searchstring):
+    if checkstring.find(searchstring) >= 0:
+      print(searchstring + "was found!")
+    else:
+      print(searchstring + "was not found!")
 
+my_string = "ABCDE"
+checkinstring(my_string ,  "BC")
+checkinstring(my_string ,  "GH")
 
+# The find method -3
+my_string = "ABCDE"
+print(my_string.find("CDE"))
+print(my_string.find("cde"))
 
+#Parameters of the find method
