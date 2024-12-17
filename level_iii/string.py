@@ -41,7 +41,7 @@ print("Assignment Concatenation: " + my_string)
 print("Assignment Concatenation:" + my_string1 +my_string2)
 my_string1 += my_string2
 print("self Assignment Concatenation:" + my_string1)
-
+# comment on line 44
 print("\n------------------\n")
 my_string1 = "12345\n"
 my_string2 = "67890"
@@ -50,7 +50,7 @@ print(my_string2)
 print("In line concatenation :" +my_string1 + my_string2)
 
 print("\n--------6--------\n")
-#String slicing
+# :xString slicing
 my_string = "ABCDE"
 print(my_string[0])
 print(my_string[2])
