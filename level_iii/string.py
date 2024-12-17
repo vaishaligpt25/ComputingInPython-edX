@@ -1,3 +1,5 @@
+from itertools import count
+
 my_string = "'12345'"
 print(my_string)
 my_string = '"abcde"'
@@ -5,6 +7,7 @@ print(my_string)
 
 my_string = '''"'12345'"'''
 print(my_string)
+print("Hello\nWorld")
 
 print("\n-------1--------\n")
 
@@ -18,7 +21,7 @@ print(my_string_with_new_line)
 
 
 print("\n--------3--------\n")
-
+# \n (it is a new line character)
 my_string = "12345\n67890\tabcde\"fghijklm\\no"
 print(my_string)
 
@@ -39,7 +42,7 @@ print("Assignment Concatenation:" + my_string1 +my_string2)
 my_string1 += my_string2
 print("self Assignment Concatenation:" + my_string1)
 
-
+print("\n------------------\n")
 my_string1 = "12345\n"
 my_string2 = "67890"
 print(my_string1)
@@ -121,12 +124,47 @@ if "BC" in my_string:
 else:
     print("BC was not found!")
 
+print("\n--------15--------\n")
+
+#the find method -1
+my_string = "ABCDE"
+print(my_string.find("CDE"))
+print(my_string.find("ACE"))
 
 
+print("\n----------16------------\n")
+#the find method -2
+#check if search string in check string
+def checkinstring(checkstring,searchstring):
+    if checkstring.find(searchstring)>=0:
+        print(searchstring+" was found!")
+    else:
+        print(searchstring+" was not found!")
 
+#Ex-
+my_string = "ABCDE"
+checkinstring(my_string,"BC")
+checkinstring(my_string,"EF")
 
+print("\n----------17------------\n")
+#the find method -3
+#print the index in string
+my_string = "ABCDEABCDE"
+print(my_string.find("CDE"))
+print(my_string.find("cde"))
 
+print("\n----------18------------\n")
+#parameter of the find method
+my_string = "ABCDEABCDEABCDEFGHIJFGHIJABCDEABCDEFGHIJ"
+findstring = "CDE"
+print(my_string.find("CDE"))
+#print the first index of "CDE" in my_string after 5
+print(my_string.find("CDE",5))
+print(my_string.find("CDE",13))
+print(my_string.find("CDE",4 , 10))
+print(my_string.find("CDE",3 , 6))
 
-
+print("\n------------\n")
+print("count of", findstring, ":", my_string.count(findstring) )
 
 
