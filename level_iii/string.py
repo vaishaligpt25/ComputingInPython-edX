@@ -209,8 +209,8 @@ print(my_string.find("CDE"))
 print(my_string.find("CDE",5))
 print(my_string.find("CDE",13))
 print(my_string.find("CDE",4 , 10))
-print(my_string.find("CDE",3 , 6))
-
-print("\n------------\n")
+print(my_string.find("CDE",3 , 6 ))
+# comment on line 213
+print( "\n------------\n")
 print("count of", findstring, ":", my_string.count(findstring) )
-
+# comment on line 216
