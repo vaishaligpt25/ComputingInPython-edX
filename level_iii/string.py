@@ -8,11 +8,11 @@ print(my_string)
 my_string = '''"'12345'"'''
 print(my_string)
 print("Hello\nWorld")
-
+# comment on line 11
 print("\n-------1--------\n")
 
 #my_string = "'"Hello,world!"'"
-print(my_string)#
+print(my_string)
 
 print("\n--------2--------\n")
 
