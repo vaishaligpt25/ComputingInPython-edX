@@ -33,19 +33,19 @@ else:
     my_dictionary["David"] = "4045551121"
 print(my_dictionary)
 
-print("\n--------3-------\n")
+print("\n--------4-------\n")
 #Adding and removing from dictionary -3
 #my_dictionary = { "David" : "4045551234", "Lucy" : "4045555678", "Vrushali" : "4045559101"}
 #print(my_dictionary["Dana"])
 
-print("\n--------4-------\n")
+print("\n--------5-------\n")
 #Traversing dictionaries-1
 my_dictionary = {"sprockets" : 5, "widgets" : 11, "cogs" :3,"gizmos":15, "gadgets": 1}
 for value in my_dictionary.values():
     if value < 5:
         print("A value less than 5 was found:", value)
 
-print("\n--------5-------\n")
+print("\n--------6-------\n")
 #Traversing dictionaries-1
 my_dictionary = {"sprockets" : 5, "widgets" : 11, "cogs" :3,"gizmos":15, "gadgets": 1}
 for key in my_dictionary.keys():
@@ -53,7 +53,7 @@ for key in my_dictionary.keys():
     if value < 5:
         print(key,"is less than 5:", value)
 
-print("\n--------6-------\n")
+print("\n--------7-------\n")
 
 #Examples of dictionary-1
 my_string = "This is the string whose words we would like to count. This string contains some repeated words, as well as some unique words. It contains punctuation, and it contains words that are capitalized in different ways. If the method we write runs correctly,it will count 4 instances of the word 'it'. 3 instances of the word 'this', and 3 instances of the word 'count'."
@@ -71,7 +71,7 @@ for word in my_split_string: #for each word in the split spring
         word_dictionary[word] = 1
 print(word_dictionary)
 
-print("\n--------7-------\n")
+print("\n--------8-------\n")
 #Examples of dictionary-2
 seating_chart = {"David" : 3, "Lucky" : 3, "Dana" : 2,"Addision" : 2,"Vrushali" : 1, "Bilbo" : 3,
                  "Sara" : 1, "Lugos" : 1, "Mireia" : 1,"Partha" : 2, "Venijamain" : 1, "Terra" :2, "Tryphon" : 3,"Gevorg" : 1,"Raza" : 3,"Rein" : 3, "Sofia" :2, "Perle" :2}
@@ -80,6 +80,9 @@ for (name , table) in seating_chart.items():
     #print the table for the name
     print(name,"is seated at table#", table,sep="")
 print()
+
+print("\n--------9-------\n")
+
 #for each table number
 for i in range(1,4):
     print("The guests at table #",i , " are: ", sep = "", end = "" )
